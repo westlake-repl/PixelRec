@@ -1,0 +1,6 @@
+model: MONextItNet
+embedding_size: 1024
+kernel_size: 3
+block_num: 3
+dilations: [1,4]
+final_layer: False

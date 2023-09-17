@@ -1,0 +1,49 @@
+# general
+seed: 2020
+state: INFO
+use_modality: True
+reproducibility: True
+checkpoint_dir: 'saved'
+show_progress: False
+
+log_wandb: False
+wandb_project: 'REC'
+MAX_ITEM_LIST_LENGTH: 10
+
+data_path: ../dataset/                       # dataset path
+dataset: Pixel200K                        # dataset name
+image_path: ../dataset/image.lmdb            # lmdb path
+
+encoder_name: 'beit-base-patch16'
+encoder_source: 'transformers'
+
+
+
+# training settings
+epochs: 200
+train_batch_size: 16           
+fine_tune_arg: {
+    tune_scale: 183, 
+    pre_trained: True,
+    activation: 'relu',
+    dnn_layers: [],
+    method: 'cls'                        
+}
+
+
+optim_args: {
+    modal_lr: 0.0001,
+    rec_lr: 0.0001,
+    modal_decay: 0,
+    rec_decay: 0.1
+}
+
+
+# eval settings
+eval_batch_size: 1024
+topk: [5,10]
+metrics: ['Recall', 'NDCG']
+valid_metric: NDCG@10
+metric_decimal_place: 7
+eval_step: 1 
+stopping_step: 30

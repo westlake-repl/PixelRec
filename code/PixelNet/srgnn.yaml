@@ -1,0 +1,3 @@
+model: MOSRGNN
+embedding_size: 512
+step: 2

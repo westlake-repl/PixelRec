@@ -1,0 +1,3 @@
+model: MOFM
+embedding_size: 4096
+dropout_prob: 0

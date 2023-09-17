@@ -1,0 +1,5 @@
+model: MOGRU4Rec
+num_layers: 1
+embedding_size: 512
+hidden_size: 1
+dropout_prob: 0

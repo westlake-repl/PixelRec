@@ -1,0 +1,37 @@
+model: ACF
+seed: 2020
+use_modality: False
+checkpoint_dir: 'saved'
+MAX_ITEM_LIST_LENGTH: 10
+
+embedding_size: 512
+
+log_wandb: False
+wandb_project: 'REC'
+MAX_ITEM_LIST_LENGTH: 10
+
+data_path: ../dataset/
+dataset: Pixel200K
+
+v_feat_path: ../dataset/visual_features/RN50_layer4.npy
+
+
+# training settings
+epochs: 200
+train_batch_size: 512  
+optim_args: {
+  learning_rate: 0.0001,
+  weight_decay: 0.01
+}
+
+
+# eval settings
+eval_batch_size: 512
+topk: [5,10]
+metrics: ['Recall', 'NDCG']
+valid_metric: NDCG@10
+metric_decimal_place: 7
+eval_step: 1 
+stopping_step: 30
+
+

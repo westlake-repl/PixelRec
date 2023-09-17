@@ -1,0 +1,3 @@
+model: FM
+embedding_size: 2048
+dropout_prob: 0

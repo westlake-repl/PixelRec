@@ -1,0 +1,4 @@
+model: MF
+embedding_size: 4096
+dropout_prob: 0
+mlp_hidden_size: []
