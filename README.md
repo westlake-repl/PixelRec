@@ -155,4 +155,3 @@ Note: you may need to modify some path in files under folders `ViNet` and `overa
 | RN50, RN50x4, RN50x16, RN50x64, ResNet50 | γ [0.0001]   β [0.01] |
 | ViT, Swin-T, Swin-B, BEiT                | γ [0.0001]   β [0]    |
 
->>>>>>> 09a6a7a (upload file)
