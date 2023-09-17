@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# PixelRec
-=======
 # PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels
 
 
