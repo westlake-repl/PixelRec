@@ -13,10 +13,10 @@ Interactions can be downloaded from https://sandbox.zenodo.org/record/1166723, c
 <div align=center><img src="https://github.com/website-pixelrec/PixelRec/blob/main/dataset/statistics/item_rank.png"/></div>
 
 
-We currently provide a sampled version including 50,000 users. The sampled dataset can be obtained through https://sandbox.zenodo.org/record/1241482. The complete dataset will be made publicly available after the paper is accepted.  
-
-
 For more detailed statistics of interactions, see  `dataset/statistics`.
+
+
+We currently provide a sampled version including 50,000 users. The sampled dataset can be obtained through https://sandbox.zenodo.org/record/1241482. The complete dataset will be made publicly available after the paper is accepted.  
 
 
 
