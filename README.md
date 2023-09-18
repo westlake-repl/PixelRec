@@ -13,6 +13,8 @@ Interactions can be downloaded from https://sandbox.zenodo.org/record/1166723, c
 <div align=center><img src="https://github.com/website-pixelrec/PixelRec/blob/main/dataset/statistics/item_rank.png"/></div>
 
 
+We currently provide a sampled version including 50,000 users. The sampled dataset can be obtained through https://sandbox.zenodo.org/record/1241482. The complete dataset will be made publicly available after the paper is accepted.  
+
 
 For more detailed statistics of interactions, see  `dataset/statistics`.
 
@@ -26,15 +28,6 @@ The item_info.csv contains item features in Pixel200K, the column names of the f
 | ------: | ----------: | -------------: | -------------: | -----------: | ----------: | --------------: | -------------: | ---: | ----------: | --------: | --------: |
 
 The entire item information data will be available once paper is accepted. We will provide the text features (description and tag) in English in the future.
-
-### Image Data
-
-We currently provide the image dataset corresponding to a sampled dataset including 50,000 users. The sampled dataset can be obtained through https://sandbox.zenodo.org/record/1241482. The complete dataset will be made publicly available after the paper is accepted.  
-
-
-
-We will provide all the images urls (408,374 images in total) and an auto-downloader to permanently access and download related image data, the downloader for all images（100G）will be available once paper is accepted.  We provide an example of the auto-downloader in  `downloader` folder, you can run it  to quickly get 1000 sample images (the downloader is only for Windows now, the Linux version will be provided after paper is accepted). 
-
 
 
 
