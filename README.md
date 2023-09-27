@@ -157,3 +157,22 @@ Note: you may need to modify some path in files under folders `ViNet` and `overa
 | RN50, RN50x4, RN50x16, RN50x64, ResNet50 | γ [0.0001]   β [0.01] |
 | ViT, Swin-T, Swin-B, BEiT                | γ [0.0001]   β [0]    |
 
+
+
+
+
+If our work has been of assistance to your work, please cite our paper as :  
+
+```
+@article{cheng2023image,
+  title={An Image Dataset for Benchmarking Recommender Systems with Raw Pixels},
+  author={Cheng, Yu and Pan, Yunzhu and Zhang, Jiaqi and Ni, Yongxin and Sun, Aixin and Yuan, Fajie},
+  journal={arXiv preprint arXiv:2309.06789},
+  year={2023}
+}
+```
+
+
+
+
+#### The laboratory is hiring research assistants, interns, doctoral students, and postdoctoral researchers. Please contact the corresponding author for details.
