@@ -15,8 +15,17 @@ Interactions can be downloaded from https://sandbox.zenodo.org/record/1166723, c
 
 For more detailed statistics of interactions, see  `dataset/statistics`.
 
+**We currently provide a sampled version including 50,000 users. The complete dataset will be made publicly available after the paper is accepted. The sampled dataset can be obtained through:**
 
-We currently provide a sampled version including 50,000 users. The sampled dataset and the item multimodal features can be obtained through https://sandbox.zenodo.org/record/1241482. The complete dataset will be made publicly available after the paper is accepted.  
+- zenodo : https://sandbox.zenodo.org/record/1241482
+
+- google drive:  
+
+  https://drive.google.com/drive/folders/1bQPgM-6yAnzcD0jKBoUUheA9LL5xnCHG?usp=sharing 
+
+  &  https://drive.google.com/file/d/1SZ7hj1HDVCV_WDidSOFGgCVhx1rpWE31/view?usp=sharing  
+
+  Due to the file size upload limit, we have evenly divided the image files into two folders, i.e. cover1 and cover2 in the link. 
 
 
 
