@@ -33,10 +33,10 @@ For more detailed statistics of interactions, see  `dataset/statistics`.
 
 See  `dataset/item_info.csv`.
 The item_info.csv contains item features in Pixel200K, the column names of the file are as follows:
-| item_id | view_number | comment_number | thumbup_number | share_number | coin_number | favorite_number | barrage_number | title_en |   title | description |  tag |
-| ------: | ----------: | -------------: | -------------: | -----------: | ----------: | --------------: | -------------: | ---: | ----------: | --------: | --------: |
+| item_id | view_number | comment_number | thumbup_number | share_number | coin_number | favorite_number | barrage_number | title |   tag |
+| ------: | ----------: | -------------: | -------------: | -----------: | ----------: | --------------: | -------------: | ---: | ----------: |
 
-The entire item information data will be available once paper is accepted. We will provide the text features (description and tag) in English in the future.
+The entire item information data will be available once paper is accepted. 
 
 
 
