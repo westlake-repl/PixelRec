@@ -1,9 +1,14 @@
 # PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels
 
 
+# Quick Links
+
+- [Dataset](#Dataset)
+- [Experiments](#Experiments)
+- [Citation](#Citation)
+
 
 # Dataset
-
 
 
 ### Interaction Data
@@ -37,6 +42,10 @@ The item_info.csv contains item features in Pixel200K, the column names of the f
 | ------: | ----------: | -------------: | -------------: | -----------: | ----------: | --------------: | -------------: | ---: | ----------: |
 
 The entire item information data will be available once paper is accepted. 
+
+
+> :warning: **Caution**: It's prohibited to privately modify the dataset and offer secondary downloads. If you've made alterations to the dataset in your work, you are encouraged to open-source the data processing code, so others can benefit from your methods.
+
 
 
 
@@ -104,7 +113,7 @@ Note: you may need to modify some path in files under folders `ViNet` and `overa
 
 
 
-# Hyper Parameters
+## Hyper Parameters
 
 > Hyper parameter range : 
 >
@@ -165,6 +174,8 @@ Note: you may need to modify some path in files under folders `ViNet` and `overa
 
 
 
+# Citation
+
 If our work has been of assistance to your work, please cite our paper as :  
 
 ```
@@ -175,8 +186,6 @@ If our work has been of assistance to your work, please cite our paper as :
   year={2023}
 }
 ```
-
-
 
 
 #### The laboratory is hiring research assistants, interns, doctoral students, and postdoctoral researchers. Please contact the corresponding author for details.
