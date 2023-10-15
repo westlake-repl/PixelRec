@@ -6,6 +6,7 @@
 - [Dataset](#Dataset)
 - [Experiments](#Experiments)
 - [Citation](#Citation)
+- [News](#News)
 
 
 # Dataset
@@ -186,6 +187,12 @@ If our work has been of assistance to your work, please cite our paper as :
   year={2023}
 }
 ```
+
+# News
+
+#### :bulb: To acquire the complete PixelRec dataset, kindly reach out to the corresponding author via email. If you have an innovative idea for building a foundational recommendation model but require a large dataset and computational resources, consider joining our lab as an intern. We can provide access to 100 NVIDIA 80G A100 GPUs and a billion-level dataset of user-image/text interactions.
+
+
 
 
 #### The laboratory is hiring research assistants, interns, doctoral students, and postdoctoral researchers. Please contact the corresponding author for details.
