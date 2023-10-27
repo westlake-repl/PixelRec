@@ -42,7 +42,7 @@ The item_info.csv contains item features in Pixel200K, the column names of the f
 | item_id | view_number | comment_number | thumbup_number | share_number | coin_number | favorite_number | barrage_number | title |   tag |
 | ------: | ----------: | -------------: | -------------: | -----------: | ----------: | --------------: | -------------: | ---: | ----------: |
 
-The entire item information data will be available once paper is accepted. 
+The entire item information data will be available later. 
 
 
 > :warning: **Caution**: It's prohibited to privately modify the dataset and offer secondary downloads. If you've made alterations to the dataset in your work, you are encouraged to open-source the data processing code, so others can benefit from your methods.
