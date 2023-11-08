@@ -14,7 +14,7 @@
 
 ### Interaction Data
 
-Interactions can be downloaded from https://sandbox.zenodo.org/record/1166723, containing **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**.  The item popularity distributions are shown as follows : 
+Interactions can be downloaded from https://drive.google.com/file/d/1kKFfVi_SWPPHb3pVpoDP88QNBZS3tv1R/view?usp=drive_link, containing **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**.  The item popularity distributions are shown as follows : 
 
 <div align=center><img src="https://github.com/website-pixelrec/PixelRec/blob/main/dataset/statistics/item_rank.png"/></div>
 
