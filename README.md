@@ -185,7 +185,9 @@ If our work has been of assistance to your work, please cite our paper as :
   year={2023}
 }
 ```
-
+# Other Datasets：
+MicroLens (A short video recommendation dataset)： https://github.com/westlake-repl/MicroLens
+Tenrec (A dataset covering 10 different recommendation tasks): https://github.com/yuangh-x/2022-NIPS-Tenrec
 # News
 
 #### :bulb: To acquire the complete PixelRec dataset, kindly reach out to the corresponding author via email. If you have an innovative idea for building a foundation recommendation model but require a large dataset and computational resources, consider joining our lab as an intern. We can provide access to 100 NVIDIA 80G A100 GPUs and a billion-level dataset of user-image/text interactions.
