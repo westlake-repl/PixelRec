@@ -1,4 +1,4 @@
-# PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels
+# PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels （Technical Report）
 
 
 # Quick Links
