@@ -18,7 +18,7 @@
 
 Interactions can be downloaded from https://drive.google.com/file/d/1kKFfVi_SWPPHb3pVpoDP88QNBZS3tv1R/view?usp=drive_link, containing **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**.  The item popularity distributions are shown as follows : 
 
-<div align=center><img src="https://github.com/website-pixelrec/PixelRec/blob/main/dataset/statistics/item_rank.png"/></div>
+<div align=center><img src="https://github.com/westlake-repl/PixelRec/blob/main/dataset/statistics/item_rank.png"/></div>
 
 
 For more detailed statistics of interactions, see  `dataset/statistics`.
