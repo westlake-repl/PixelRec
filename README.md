@@ -11,7 +11,6 @@
 
 # Dataset
 ### Overview
-On the left are example of images in PixelRec vs. Amazon.  Images in PixelRec are more abstract and semantically rich than those in Amazon. Moreover, most image types found in Amazon (e.g. products), GEST (e.g. food), and HM (e.g. clothes) can also be found in PixelRec. We show a typical video example on the right, its cover image as well as abundant other features are included in PixelRec : 
 
 <div align=center><img src="https://github.com/westlake-repl/PixelRec/blob/main/dataset/overview.png"/></div>
 
