@@ -15,8 +15,10 @@ class FSASRec(nn.Module):
         # load parameters info
         self.n_layers = config['n_layers']
         self.n_heads = config['n_heads']
-        self.hidden_size = config['embedding_size']  # same as embedding_size
-        self.inner_size = config['inner_size']  # the dimensionality in feed-forward layer
+        self.hidden_size = config['embedding_size'] 
+        self.inner_size = config['inner_size']  
+        
+        self.inner_size *= self.hidden_size
         self.hidden_dropout_prob = config['hidden_dropout_prob']
         self.attn_dropout_prob = config['attn_dropout_prob']
         self.hidden_act = config['hidden_act']
