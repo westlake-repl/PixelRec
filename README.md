@@ -25,7 +25,7 @@ For more detailed statistics of interactions, see  `dataset/statistics`.
 
 **We currently provide a sampled version including 50,000 users. The complete dataset will be made publicly available later. The sampled dataset can be obtained through:**
 
-**Note that this is an image recommendation dataset, if you need video information, please go to our MicroLens github,a large-scale micro-video recommendation dataset collected from a different platform.**
+**Note that this is an image recommendation dataset, if you need video information, please go to our MicroLens github （https://github.com/westlake-repl/MicroLens）, a large-scale micro-video recommendation dataset collected from a different platform.**
 
 - zenodo : https://sandbox.zenodo.org/record/1241482
 
