@@ -1,54 +1,43 @@
 # PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels 
 
 
+
 # Quick Links
 
 - [Dataset](#Dataset)
 - [Experiments](#Experiments)
 - [Citation](#Citation)
+- [Other Datasets](#Other Datasets)
 - [News](#News)
 
 
+
 # Dataset
+
 ### Overview
 
 <div align=center><img src="https://github.com/westlake-repl/PixelRec/blob/main/dataset/overview.png"/></div>
 
-### Interaction Data
+### Download Link
+[**Interaction**](https://drive.google.com/drive/folders/1vR1lgQUZCy1cuhzPkM2q7AsdYRP43feQ?usp=drive_link) It contains the interaction of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset/statistics` for detailed statistics. 
 
-Interactions can be downloaded from https://drive.google.com/file/d/1kKFfVi_SWPPHb3pVpoDP88QNBZS3tv1R/view?usp=drive_link, containing **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**.  The item popularity distributions are shown as follows : 
+[**Item Infomation**](https://drive.google.com/drive/folders/1rXBM-zi5sSdLHNshXWtGgVReWLuYNgDB?usp=drive_link)  It contains the item information/attributes of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset` for its detailed descriptions. 
 
-<div align=center><img src="https://github.com/westlake-repl/PixelRec/blob/main/dataset/statistics/item_rank.png"/></div>
-
-
-For more detailed statistics of interactions, see  `dataset/statistics`.
-
-**We currently provide a sampled version including 50,000 users. The complete dataset will be made publicly available later. The sampled dataset can be obtained through:**
-
-**Note that this is an image recommendation dataset, if you need video information, please go to our MicroLens github （https://github.com/westlake-repl/MicroLens）, a large-scale micro-video recommendation dataset collected from a different platform.**
-
-- zenodo : https://sandbox.zenodo.org/record/1241482
-
-- google drive:  
-
-  https://drive.google.com/drive/folders/1bQPgM-6yAnzcD0jKBoUUheA9LL5xnCHG?usp=sharing 
-
-  &  https://drive.google.com/file/d/1SZ7hj1HDVCV_WDidSOFGgCVhx1rpWE31/view?usp=sharing  
-
-  Due to the file size upload limit, we have evenly divided the image files into two folders, i.e. cover1 and cover2 in the link. 
+[**Cover**](https://drive.google.com/file/d/17V70KN6UOAdphNEc0wXlocFwgmI7hVOo/view?usp=drive_link)  It includes all the images in **PixelRec**,  a total of 408,374 covers. 
 
 
 
-### Item Information Data
+A sampled dataset was provided to help quickly understand the data contained in PixelRec. This data includes 989,494 interactions from 50,000 users with 82,865 items. The interaction data, item attributes, and covers can be downloaded [here](https://drive.google.com/drive/folders/1bQPgM-6yAnzcD0jKBoUUheA9LL5xnCHG?usp=drive_link). 
 
-See  `dataset/item_info.csv`.
-The item_info.csv contains item features in PixelRec, the column names of the file are as follows:
-| item_id | view_number | comment_number | thumbup_number | share_number | coin_number | favorite_number | barrage_number | title |   tag |
-| ------: | ----------: | -------------: | -------------: | -----------: | ----------: | --------------: | -------------: | ---: | ----------: |
+
+
+We provide an [integrated folder](https://drive.google.com/file/d/1fu0tqCmmXkte5PAsyMo0DQrDS0zofTLH/view?usp=drive_link) for Pixel200K. After downloading the data file in this format, you can directly run the experiments in the paper under Pixel200K.
+
 
 
 > :warning: **Caution**: It's prohibited to privately modify the dataset and offer secondary downloads. If you've made alterations to the dataset in your work, you are encouraged to open-source the data processing code, so others can benefit from your methods.
 
+**Note that this is an image recommendation dataset, if you need video information, please go to our MicroLens github （https://github.com/westlake-repl/MicroLens）, a large-scale micro-video recommendation dataset collected from a different platform.**
 
 
 
@@ -133,32 +122,32 @@ Note: you may need to modify some path in files under folders `ViNet` and `overa
 **Hyper-parameter details of IDNet. $\gamma$,  $\beta$ and $B$ are the learning rate, weight decay and batch size respectively.**
 
 | Method (IDNet) | Model Parameters                                             | Training Parameters                                          |
-| --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| MF     | dropout prob [0]    embedding size [4096]                    | γ [0.0001]   B [512]     β [0]                               |
-| FM        | embedding size [4096]                                        | γ [0.00005]   B [64]     β [0]                               |
-| DSSM      | dnn layer number [0]    embedding size [4096]                | γ [0.0001]   B [64]     β [0]                                |
-| LightGCN  | step [2]    embedding size [256]                             | γ [0.0005]   B [1024]     β [0.01]                           |
-| SASRec    | trm layer number [2]    inner size [2]    embedding size [512] | γ [0.00005]   B [64]     β [0.1]                             |
-| BERT4Rec  | mask ratio [0.6]    trm layer number [2]    inner size  [1]    embedding size [512] | γ [0.00005]   B [64]     β [0.1]                             |
-| LightSANs  | k [3]    trm layer number [1]  embedding size [512] | γ [0.00005]   B [512]     β [0.1]                             |
-| GRU4Rec   | dropout prob [0]    gru layer number [1]    inner size  [2]    embedding size [2048] | γ [0.0001]   B [64]     β [0.01]                             |
-| NextItNet | block number [3]    embedding size [1024]                    | γ [0.0005]   B [64]     β [0.01]                             |
-| SRGNN     | step [2]    embedding size [512]                             | γ [0.00005]   B [64]     β [0.01]                            |
-| VisRank   | visual feature [RN_2048]    method [maximum]                 |                                                              |
-| VBPR      |                                                              | id γ [0.001]    id β [0]    visual γ [0.0001]    visual β [0.1] |
-| ACF       | embedding size [128]                                         | γ [0.0001]   B [64]     β [0.1]                              |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| MF             | dropout prob [0]    embedding size [4096]                    | γ [0.0001]   B [512]     β [0]                               |
+| FM             | embedding size [4096]                                        | γ [0.00005]   B [64]     β [0]                               |
+| DSSM           | dnn layer number [0]    embedding size [4096]                | γ [0.0001]   B [64]     β [0]                                |
+| LightGCN       | step [2]    embedding size [256]                             | γ [0.0005]   B [1024]     β [0.01]                           |
+| SASRec         | trm layer number [2]    inner size [2]    embedding size [512] | γ [0.00005]   B [64]     β [0.1]                             |
+| BERT4Rec       | mask ratio [0.6]    trm layer number [2]    inner size  [1]    embedding size [512] | γ [0.00005]   B [64]     β [0.1]                             |
+| LightSANs      | k [3]    trm layer number [1]  embedding size [512]          | γ [0.00005]   B [512]     β [0.1]                            |
+| GRU4Rec        | dropout prob [0]    gru layer number [1]    inner size  [2]    embedding size [2048] | γ [0.0001]   B [64]     β [0.01]                             |
+| NextItNet      | block number [3]    embedding size [1024]                    | γ [0.0005]   B [64]     β [0.01]                             |
+| SRGNN          | step [2]    embedding size [512]                             | γ [0.00005]   B [64]     β [0.01]                            |
+| VisRank        | visual feature [RN_2048]    method [maximum]                 |                                                              |
+| VBPR           |                                                              | id γ [0.001]    id β [0]    visual γ [0.0001]    visual β [0.1] |
+| ACF            | embedding size [128]                                         | γ [0.0001]   B [64]     β [0.1]                              |
 
 
 
 **For the most architectures, PixelNet uses the same hyperparameters as its IDNet, with a few exceptions here. The embedding size refers to the hidden dimension of the user encoder.**
 
-| Method  (PixelNet) | Model Parameters | Training Parameters |
-| ------ | ---------------- | ------------------- |
-| SASRec    | trm layer number [2]    inner size [2]    embedding size [512] | γ [0.0001]   B [64]     β [0.1]                             |
-| BERT4Rec  | mask ratio [0.6]    trm layer number [2]    inner size  [1]    embedding size [512] | γ [0.0001]   B [64]     β [0.1]                             |
-| LightSANs  | k [3]    trm layer number [1]  embedding size [512] | γ [0.0001]   B [512]     β [0.1]                             |
-| NextItNet | block number [3]    embedding size [1024]                    | γ [0.0001]   B [64]     β [0.01]                             |
-| SRGNN     | step [2]    embedding size [512]                             | γ [0.0001]   B [512]     β [0.01]                          |
+| Method  (PixelNet) | Model Parameters                                             | Training Parameters               |
+| ------------------ | ------------------------------------------------------------ | --------------------------------- |
+| SASRec             | trm layer number [2]    inner size [2]    embedding size [512] | γ [0.0001]   B [64]     β [0.1]   |
+| BERT4Rec           | mask ratio [0.6]    trm layer number [2]    inner size  [1]    embedding size [512] | γ [0.0001]   B [64]     β [0.1]   |
+| LightSANs          | k [3]    trm layer number [1]  embedding size [512]          | γ [0.0001]   B [512]     β [0.1]  |
+| NextItNet          | block number [3]    embedding size [1024]                    | γ [0.0001]   B [64]     β [0.01]  |
+| SRGNN              | step [2]    embedding size [512]                             | γ [0.0001]   B [512]     β [0.01] |
 
 
 
