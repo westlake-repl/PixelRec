@@ -20,13 +20,13 @@
 ### Download Link
 [**Interaction**](https://drive.google.com/drive/folders/1vR1lgQUZCy1cuhzPkM2q7AsdYRP43feQ?usp=drive_link) It contains the interaction of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset/statistics` for detailed statistics. 
 
-[**Item Infomation**](https://drive.google.com/drive/folders/1rXBM-zi5sSdLHNshXWtGgVReWLuYNgDB?usp=drive_link)  It contains the item information/attributes of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset` for its detailed descriptions. 
+[**Item Infomation**](https://drive.google.com/drive/folders/1rXBM-zi5sSdLHNshXWtGgVReWLuYNgDB?usp=drive_link)  It contains the item description/attributes of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset` for its detailed descriptions. 
 
 [**Cover**](https://drive.google.com/file/d/17V70KN6UOAdphNEc0wXlocFwgmI7hVOo/view?usp=drive_link)  It includes all the images in **PixelRec**,  a total of 408,374 covers. 
 
 
 
-A sampled dataset was provided to help quickly understand the data contained in PixelRec. This data includes 989,494 interactions from 50,000 users with 82,865 items. The interaction data, item attributes, and covers can be downloaded [here](https://drive.google.com/drive/folders/1bQPgM-6yAnzcD0jKBoUUheA9LL5xnCHG?usp=drive_link). 
+A sampled dataset PixelRec50K was provided to help quickly understand the data contained in PixelRec. This data includes 989,494 interactions from 50,000 users with 82,865 items. The interaction data, item attributes, and covers can be downloaded [here](https://drive.google.com/drive/folders/1bQPgM-6yAnzcD0jKBoUUheA9LL5xnCHG?usp=drive_link). 
 
 
 
