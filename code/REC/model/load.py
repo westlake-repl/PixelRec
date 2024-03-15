@@ -1,7 +1,7 @@
 import torchvision.models as models
 import clip #if encountered 'import error' here, please see https://github.com/openai/CLIP to install 'clip'
 from transformers import CLIPVisionModel
-from REC.model.layers import ItemEncoder, FIXItemEncoder
+from REC.model.layers import ItemEncoder, FIXItemEncoder, FIXItemEncoder, SEMATICItemEncoder, HYItemEncoder
 from transformers import CLIPVisionModel,SwinModel,ViTMAEModel,SwinConfig,BeitModel
 import torch
 from REC.model.layers import *
@@ -142,7 +142,7 @@ def load_model(config):
             if method == 'cls':
                 model.pooler = Identity()
                 model = ClsItemEncoder(item_encoder=model, input_dim=input_dim, output_dim=output_dim, act_name=activation,dnn_layers=dnn_layers)
-            elif method == 'pool':   #SwinForImageClassification用的是这个
+            elif method == 'pool':   #used in SwinForImageClassification
                 model = PoolItemEncoder(item_encoder=model, input_dim=input_dim, output_dim=output_dim, act_name=activation,dnn_layers=dnn_layers)
 
         elif encoder_name == 'swin-base-patch4-window7-224':
@@ -158,7 +158,7 @@ def load_model(config):
             model = BeitModel.from_pretrained('microsoft/beit-base-patch16-224')
     
             for index, (name, param) in enumerate(model.named_parameters()):
-                if index < tune_scale:   #tune最后两层183
+                if index < tune_scale:   #tune the last two layers : 183
                     param.requires_grad = False
             model = PoolItemEncoder(item_encoder=model, input_dim=input_dim, output_dim=output_dim, act_name=activation,dnn_layers=dnn_layers)
     return model
@@ -168,10 +168,21 @@ def load_weights(config):
     image_feature_path = config['v_feat_path']
     device = config['device']
     output_dim = config['embedding_size']
-    activation = 'relu' #config['fine_tune_arg']['activation']
+    activation = 'relu' 
     dnn_layers = config['dnn_layers']
-  
-    model = FIXItemEncoder(weight_path=image_feature_path, device=device
-    , output_dim=output_dim, act_name=activation,dnn_layers=dnn_layers)
+    if config['semantic_model']:
+        sid_path = config['semantic_id_path']
+        model = SEMATICItemEncoder(weight_path=sid_path, device=device
+        , output_dim=output_dim, act_name=activation,dnn_layers=dnn_layers)
+    elif config['hybrid_model']:
+
+        model = HYItemEncoder(weight_path=image_feature_path, device=device
+        , output_dim=output_dim, item_num = config['item_num'], act_name=activation,dnn_layers=dnn_layers)
+
+
+    elif config['freeze_model']:
+
+        model = FIXItemEncoder(weight_path=image_feature_path, device=device
+        , output_dim=output_dim, act_name=activation,dnn_layers=dnn_layers)
 
     return model

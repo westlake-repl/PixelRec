@@ -4,6 +4,7 @@ class InputType(Enum):
 
     SEQ = 1
     PAIR = 2
+    AUGSEQ = 3
 
 
 class EvaluatorType(Enum):

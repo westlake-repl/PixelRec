@@ -2,6 +2,8 @@ model: ACF
 seed: 2020
 use_modality: False
 checkpoint_dir: 'saved'
+show_progress: False
+
 MAX_ITEM_LIST_LENGTH: 10
 
 embedding_size: 512

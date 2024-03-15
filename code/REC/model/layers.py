@@ -60,43 +60,8 @@ class Identity(nn.Module):
     def forward(self,x):
         return x
 
-class CLIPItemEncoder(nn.Module):
-    def __init__(self, item_encoder, input_dim, output_dim, act_name, dnn_layers = None):
-        super(CLIPItemEncoder, self).__init__()
-        
-        if dnn_layers:
-            dnn_layers = [input_dim] + dnn_layers + [output_dim]
-            rec_fc = MLPLayers(dnn_layers, activation=act_name, bn=False)
-        
-        else:
-            rec_fc = nn.Sequential(
-                nn.Linear(input_dim, output_dim), 
-                activation_layer(act_name))
-        
-        rec_fc.apply(self._init_weights)
-               
-        self.item_encoder = item_encoder
-        self.rec_fc = rec_fc
 
-        
-      
-
-    def _init_weights(self, module):      
-        if isinstance(module, (nn.Linear, nn.Embedding)):
-            xavier_normal_(module.weight.data)
-        elif isinstance(module, nn.LayerNorm):
-            module.bias.data.zero_()
-            module.weight.data.fill_(1.0)
-        if isinstance(module, nn.Linear) and module.bias is not None:
-            constant_(module.bias.data, 0)
-    
-    def forward(self, x):
-        x = self.item_encoder(x)
-        x = torch.flatten(x, 1)
-        return self.rec_fc(x)    
-    
-    
-
+  
 class PatchItemEncoder(nn.Module):
     def __init__(self, item_encoder, input_dim, output_dim, act_name, dnn_layers = None):
         super(PatchItemEncoder, self).__init__()
@@ -127,13 +92,17 @@ class PatchItemEncoder(nn.Module):
         pass 
 
 
-
-class Identity(nn.Module):
-    def __init__(self):
-        super(Identity, self).__init__()
+class CLIPItemEncoder(PatchItemEncoder):
+    def __init__(self, item_encoder, input_dim, output_dim, act_name, dnn_layers = None):
+        super(CLIPItemEncoder, self).__init__(item_encoder, input_dim, output_dim, act_name, dnn_layers)
+        
     
-    def forward(self,x):
-        return x
+    def forward(self, x):
+        x = self.item_encoder(x)
+        x = torch.flatten(x, 1)
+        return self.rec_fc(x)  
+
+
 
 
     
@@ -182,13 +151,88 @@ class FIXItemEncoder(nn.Module):
             rec_fc = nn.Sequential(
                 nn.Linear(input_dim, output_dim), 
                 activation_layer(act_name))
+            
+        rec_fc.apply(self._init_weights)
         self.rec_fc = rec_fc
         
-
+    def _init_weights(self, module):      
+        if isinstance(module, (nn.Linear, nn.Embedding)):
+            xavier_normal_(module.weight.data)
+        elif isinstance(module, nn.LayerNorm):
+            module.bias.data.zero_()
+            module.weight.data.fill_(1.0)
+        if isinstance(module, nn.Linear) and module.bias is not None:
+            constant_(module.bias.data, 0)
+    
     def forward(self, x):
         x = self.item_weights[x]
         x = self.rec_fc(x)
         return x
+
+
+class HYItemEncoder(nn.Module):
+    def __init__(self, weight_path, device, output_dim, item_num, act_name, dnn_layers = None):
+        super(HYItemEncoder, self).__init__()
+        self.item_weights = torch.tensor(np.load(weight_path)).to(device)
+        self.item_id_embedding = nn.Embedding(item_num, output_dim)
+        input_dim = self.item_weights.shape[-1] + output_dim
+        if dnn_layers:
+            dnn_layers = [input_dim] + dnn_layers + [output_dim]
+            rec_fc = MLPLayers(dnn_layers, activation=act_name, bn=False)
+        
+        else:
+            rec_fc = nn.Sequential(
+                nn.Linear(input_dim, output_dim), 
+                activation_layer(act_name))
+        
+        rec_fc.apply(self._init_weights)
+        self.rec_fc = rec_fc
+        xavier_normal_(self.item_id_embedding.weight.data)
+        
+    def _init_weights(self, module):      
+        if isinstance(module, (nn.Linear, nn.Embedding)):
+            xavier_normal_(module.weight.data)
+        elif isinstance(module, nn.LayerNorm):
+            module.bias.data.zero_()
+            module.weight.data.fill_(1.0)
+        if isinstance(module, nn.Linear) and module.bias is not None:
+            constant_(module.bias.data, 0)
+    
+    def forward(self, x):
+        x_c = self.item_weights[x]
+        x_id = self.item_id_embedding(x)
+        x = self.rec_fc(torch.cat((x_c, x_id), dim=-1))
+        return x
+
+
+
+class SEMATICItemEncoder(nn.Module):
+    def __init__(self, weight_path, device, output_dim, act_name, dnn_layers = None):
+        super(SEMATICItemEncoder, self).__init__()
+        self.pq_codes = torch.tensor(np.load(weight_path)).to(device)
+        
+        self.code_dim = self.pq_codes.shape[-1]
+       
+        self.code_cap = int(self.pq_codes[:, 0].max() + 1)
+
+        acc_code = torch.tensor(np.cumsum([0] + [1 + self.code_cap] * (self.code_dim-1))).to(device)
+        self.pq_codes = self.pq_codes + acc_code
+    
+        
+        self.pq_code_embedding = nn.Embedding(
+            self.code_dim * (1 + self.code_cap), output_dim, padding_idx=0)
+        
+        xavier_normal_(self.pq_code_embedding.weight.data)
+
+
+    def forward(self, item_seq):
+
+        pq_code_seq = self.pq_codes[item_seq]
+        pq_code_emb = self.pq_code_embedding(pq_code_seq).mean(dim=-2)
+        return pq_code_emb
+
+
+
 
 #[64, 128, 512] -> (64,128), (128,512)
 #[64]
@@ -988,13 +1032,5 @@ class SparseDropout(nn.Module):
         val = x._values()[mask] * (1.0 / self.kprob)
         return torch.sparse.FloatTensor(rc, val, x.shape)
 
-
-
-class Identity(nn.Module):
-    def __init__(self):
-        super(Identity, self).__init__()
-    
-    def forward(self,x):
-        return x
 
 

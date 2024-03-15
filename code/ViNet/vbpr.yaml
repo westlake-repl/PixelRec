@@ -9,6 +9,7 @@ dropout_prob: 0
 
 log_wandb: False
 wandb_project: 'REC'
+show_progress: False
 MAX_ITEM_LIST_LENGTH: 10
 
 data_path: ../dataset/

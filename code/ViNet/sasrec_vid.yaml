@@ -1,0 +1,49 @@
+model: FSASRec
+hybrid_model: True
+seed: 2020
+use_modality: False
+checkpoint_dir: 'saved'
+MAX_ITEM_LIST_LENGTH: 10
+
+n_layers: 2
+n_heads: 4
+embedding_size: 512
+inner_size: 2
+hidden_dropout_prob: 0.1
+attn_dropout_prob: 0.1
+hidden_act: 'gelu'
+layer_norm_eps: 1e-12
+initializer_range: 0.02
+
+log_wandb: False
+wandb_project: 'REC'
+show_progress: False
+MAX_ITEM_LIST_LENGTH: 10
+
+data_path: ../dataset/
+dataset: Pixel200K
+
+v_feat_path: ../dataset/visual_features/RN50.npy
+
+
+# training settings
+epochs: 200
+train_batch_size: 512  
+
+optim_args: {
+    modal_lr: 0.0001,
+    rec_lr: 0.001,
+    modal_decay: 0.1,
+    rec_decay: 0
+}
+
+# eval settings
+eval_batch_size: 512
+topk: [5,10]
+metrics: ['Recall', 'NDCG']
+valid_metric: NDCG@10
+metric_decimal_place: 7
+eval_step: 1 
+stopping_step: 30
+
+

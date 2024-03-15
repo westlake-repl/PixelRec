@@ -6,7 +6,7 @@ from logging import getLogger
 from REC.data.dataset import *
 from REC.utils import set_color
 from functools import partial
-from .data import Data
+from .dataload import Data
 import torch
 from torch.utils.data import Dataset, DataLoader
 import numpy as np

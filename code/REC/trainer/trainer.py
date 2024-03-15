@@ -184,8 +184,8 @@ class Trainer(object):
      
         # load optimizer state from checkpoint only when optimizer type is not changed
         self.optimizer.load_state_dict(checkpoint['optimizer'])
-        torch.set_rng_state(checkpoint['rng_state'])  # load torch的随机数生成器状态
-        torch.cuda.set_rng_state(checkpoint['cuda_rng_state'])  # load torch.cuda的随机数生成器状态
+        torch.set_rng_state(checkpoint['rng_state'])  
+        torch.cuda.set_rng_state(checkpoint['cuda_rng_state'])  
         message_output = 'Checkpoint loaded. Resume training from epoch {}'.format(self.start_epoch)
         self.logger.info(message_output)
 

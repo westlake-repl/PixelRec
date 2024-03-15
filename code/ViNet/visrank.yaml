@@ -1,13 +1,18 @@
 model: VISRANK
+seed: 2020
 
 method: average_top_k   
 top_num: 1
 
+use_modality: False
 log_wandb: False
 wandb_project: 'REC'
+show_progress: False
+checkpoint_dir: 'saved'
+
 MAX_ITEM_LIST_LENGTH: 10
 
-data_path: dataset/
+data_path: ../dataset/
 dataset: Pixel200K
 
 v_feat_path: ../dataset/visual_features/RN50.npy

@@ -2,4 +2,3 @@ model: SRGNN
 embedding_size: 512
 step: 2
 
-data_augmentation: True
