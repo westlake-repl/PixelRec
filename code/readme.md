@@ -43,7 +43,7 @@ We supply a brief guide on implementing new models based on the pipeline. The fo
 The steps outlined above ensure the correct definition of a new model in the pipeline. In the end, it is necessary to choose the input and output data formats for the new model to perform model training and evaluation with reliance on pipeline interfaces. Multiple implementations of data formats are provided in `data.dataset` module, see the upper table for reference. In the model, specifying the class variable `input_type` to set a particular data format. For example, setting `input_type == InputType.Pair` corresponds to the data format of the 1st row from Table. Then with the usage of `data.utils` function, you can bind the model name with corresponding train, valid, and test dataset names, thus completing the process of model input and output data format finalization.   
 
 
-> Thanks to the excellent code repository [Recbole](https://github.com/RUCAIBox/RecBole) and [VisRec](https://github.com/ialab-puc/VisualRecSys-Tutorial-IUI2021) ! 
+> Thanks to the excellent code repository [RecBole](https://github.com/RUCAIBox/RecBole) and [VisRec](https://github.com/ialab-puc/VisualRecSys-Tutorial-IUI2021) ! 
 
 
 
