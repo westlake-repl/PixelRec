@@ -8,7 +8,7 @@ ACF |  u, i1, i2 ...in−1 → in; u, i1, i2 ...in → in−1 ; ... u, i2, i3 ..
 GRU4Rec, NextItNet, SASRec |  i1, i2 ...in−1 → i2, i3 ...in; | InputType.SEQ
 BERT4Rec | i1, [MASK], ...in → i2 | InputType.SEQ
 SRGNN, LightSANs | i1→ i2; i1, i2→ i3; ... i1, i2 ...in−1 → in; | InputType.AUGSEQ
-VisRank |   i1, i2 ...iNu−1 → iNu | InputType.SEQ
+VisRank |   i1, i2 ...iNu−1 → iNu | InputType.SEQ/ Pair 
 
 
 
