@@ -11,7 +11,7 @@
 
 Quick Links: [🗃️Dataset](#Dataset) |
 [🛠️Experiments](#Experiments) |
-[👀Others](#Other) |
+[👀Others](#Others) |
 [📭Citation](#Citation) |
 [💡News](#News)
 
