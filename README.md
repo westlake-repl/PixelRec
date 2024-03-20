@@ -1,14 +1,26 @@
-# [SDM2024]PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels 
+# [SDM2024] PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels 
 
+<a href="https://arxiv.org/pdf/2309.06789.pdf" alt="paper"><img src="https://img.shields.io/badge/ArXiv-2309.06789-FAA41F.svg?style=flat" /></a>
+<a href="https://github.com/westlake-repl/PixelRec/blob/main/doc/pre.pdf" alt="slides"><img src="https://img.shields.io/badge/Slides-SDM2024-yellow" /></a>
+<a href="https://medium.com/@lifengyi_6964/pixelrec-a-large-scale-multimodal-recommendation-dataset-under-short-video-scenario-b5e4113ee4ea" alt="blog"><img src="https://img.shields.io/badge/Blog-English-blue
+" /></a> 
+<a href="https://mp.weixin.qq.com/s/00QFPWE8y8FDhnVY_KE56Q" alt="博客"><img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-%E4%B8%AD%E6%96%87-purple" /></a> 
+ 
+![Multi-Modal](https://img.shields.io/badge/Task-Multi--Modal-red) 
+![Foundation-Model](https://img.shields.io/badge/Task-Foundation_Model-red) 
+![Recommendation](https://img.shields.io/badge/Task-Recommendation-red) 
 
+Quick Links
 
-# Quick Links
+[🗃️Dataset](#Dataset) |
+[🛠️Experiments](#Experiments) |
+[👀Others](#Other) |
+[📭Citation](#Citation) |
+[💡News](#News)
 
-- [Dataset](#Dataset)
-- [Experiments](#Experiments)
-- [Citation](#Citation)
-- [News](#News)
-
+<p align="center" width="100%">
+  <img src='https://camo.githubusercontent.com/ace7effc2b35cda2c66d5952869af563e851f89e5e1af029cfc9f69c7bebe78d/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67' width="100%">
+</p>
 
 
 # Dataset
