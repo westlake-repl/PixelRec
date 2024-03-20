@@ -1,4 +1,4 @@
-# PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels 
+# [SDM2024]PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels 
 
 
 
