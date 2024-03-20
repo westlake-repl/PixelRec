@@ -9,7 +9,7 @@
 ![Foundation-Model](https://img.shields.io/badge/Task-Foundation_Model-red) 
 ![Recommendation](https://img.shields.io/badge/Task-Recommendation-red) 
 
-Quick Links[🗃️Dataset](#Dataset) |
+Quick Links: [🗃️Dataset](#Dataset) |
 [🛠️Experiments](#Experiments) |
 [👀Others](#Other) |
 [📭Citation](#Citation) |
