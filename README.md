@@ -9,9 +9,7 @@
 ![Foundation-Model](https://img.shields.io/badge/Task-Foundation_Model-red) 
 ![Recommendation](https://img.shields.io/badge/Task-Recommendation-red) 
 
-Quick Links
-
-[🗃️Dataset](#Dataset) |
+Quick Links[🗃️Dataset](#Dataset) |
 [🛠️Experiments](#Experiments) |
 [👀Others](#Other) |
 [📭Citation](#Citation) |
@@ -188,7 +186,7 @@ If our work has been of assistance to your work, please cite our paper as :
   year={2023}
 }
 ```
-# Other Datasets：
+# Others：
 |MicroLens (A short video recommendation dataset) | https://github.com/westlake-repl/MicroLens |
 
 |Tenrec (A dataset covering 10 different recommendation tasks) | https://github.com/yuangh-x/2022-NIPS-Tenrec   |
