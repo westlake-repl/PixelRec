@@ -2,8 +2,7 @@
 
 <a href="https://arxiv.org/pdf/2309.06789.pdf" alt="paper"><img src="https://img.shields.io/badge/ArXiv-2309.06789-FAA41F.svg?style=flat" /></a>
 <a href="https://github.com/westlake-repl/PixelRec/blob/main/doc/pre.pdf" alt="slides"><img src="https://img.shields.io/badge/Slides-SDM2024-yellow" /></a>
-<a href="https://medium.com/@lifengyi_6964/pixelrec-a-large-scale-multimodal-recommendation-dataset-under-short-video-scenario-b5e4113ee4ea" alt="blog"><img src="https://img.shields.io/badge/Blog-English-blue
-" /></a> 
+<a href="https://medium.com/@lifengyi_6964/pixelrec-a-large-scale-multimodal-recommendation-dataset-under-short-video-scenario-b5e4113ee4ea" alt="blog"><img src="https://img.shields.io/badge/Blog-English-blue" /></a> 
 <a href="https://mp.weixin.qq.com/s/00QFPWE8y8FDhnVY_KE56Q" alt="博客"><img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-%E4%B8%AD%E6%96%87-purple" /></a> 
  
 ![Multi-Modal](https://img.shields.io/badge/Task-Multi--Modal-red) 
