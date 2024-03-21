@@ -19,6 +19,8 @@ Quick Links: [🗃️Dataset](#Dataset) |
   <img src='https://camo.githubusercontent.com/ace7effc2b35cda2c66d5952869af563e851f89e5e1af029cfc9f69c7bebe78d/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67' width="100%">
 </p>
 
+# Note
+In this paper, we evaluate the PixelNet model based on end-to-end training of the recommendation backbone and item modality encoders, which is computationally expensive. The reason we do this is because end-to-end training shows better performance than pre-extracted multi-modal features. However, we hope that PixelRec can inspire more effective and efficient ways to exploit visual features rather than just limiting them to end-to-end training paradigms.
 
 # Dataset
 
