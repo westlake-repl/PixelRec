@@ -28,7 +28,7 @@ In this paper, we evaluate the PixelNet model based on end-to-end training of th
 
 <div align=center><img src="https://github.com/westlake-repl/PixelRec/blob/main/dataset/overview.png"/></div>
 
-### Download Link （releasing all data!）
+### Download Link 
 [**Interaction**](https://drive.google.com/drive/folders/1vR1lgQUZCy1cuhzPkM2q7AsdYRP43feQ?usp=drive_link) It contains the interaction of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset/statistics` for detailed statistics. 
 
 [**Item Infomation**](https://drive.google.com/drive/folders/1rXBM-zi5sSdLHNshXWtGgVReWLuYNgDB?usp=drive_link)  It contains the item description/attributes of  **Pixel200K**, **Pixel1M**, **Pixel8M** and **PixelRec**, see `dataset` for its detailed descriptions. 
