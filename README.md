@@ -193,7 +193,7 @@ If our work has been of assistance to your work, please cite our paper as :
 
 |Tenrec (A dataset covering 10 different recommendation tasks) | https://github.com/yuangh-x/2022-NIPS-Tenrec   |
 
-|Nine (A dataset covering 9 downstream recommendation tasks) | https://github.com/westlake-repl/NineRec   |
+|Nine (A dataset suite covering 9 downstream recommendation tasks) | https://github.com/westlake-repl/NineRec   |
 
 # News
 
