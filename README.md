@@ -35,7 +35,7 @@ In this paper, we evaluate the PixelNet model based on end-to-end training of th
 
 [**Cover**](https://drive.google.com/file/d/17V70KN6UOAdphNEc0wXlocFwgmI7hVOo/view?usp=drive_link)  It includes all the images in **PixelRec**,  a total of 408,374 covers. 
 
-**Extracted Features**, currently including [text feature](https://drive.google.com/file/d/1t1ZknzSY-8KxhhfTWMORh66BOdV7qmCj/view?usp=drive_link) and [image feature](https://drive.google.com/file/d/12VW6o5AToMFWLbSILi5_c6tlSXS43qm6/view?usp=drive_link).
+**Extracted Features**(https://drive.google.com/drive/folders/1ahUB5fwaBU-6RS2hjtEdBjoWw-Z4r6pk?usp=drive_link), currently including [text feature vectors](https://drive.google.com/file/d/1t1ZknzSY-8KxhhfTWMORh66BOdV7qmCj/view?usp=drive_link) and [image feature vectors](https://drive.google.com/file/d/12VW6o5AToMFWLbSILi5_c6tlSXS43qm6/view?usp=drive_link).
 
 A sampled dataset PixelRec50K was provided to help quickly understand the data contained in PixelRec. This data includes 989,494 interactions from 50,000 users with 82,865 items. The interaction data, item attributes, and covers can be downloaded [here](https://drive.google.com/drive/folders/1bQPgM-6yAnzcD0jKBoUUheA9LL5xnCHG?usp=drive_link). 
 
