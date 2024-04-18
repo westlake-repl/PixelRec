@@ -4,7 +4,7 @@
 <a href="https://github.com/westlake-repl/PixelRec/blob/main/doc/pre.pdf" alt="slides"><img src="https://img.shields.io/badge/Slides-SDM2024-yellow" /></a>
 <a href="https://medium.com/@lifengyi_6964/pixelrec-a-large-scale-multimodal-recommendation-dataset-under-short-video-scenario-b5e4113ee4ea" alt="blog"><img src="https://img.shields.io/badge/Blog-English-blue" /></a> 
 <a href="https://zhuanlan.zhihu.com/p/684805058" alt="博客"><img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-%E4%B8%AD%E6%96%87-purple" /></a> 
- 
+
 ![Multi-Modal](https://img.shields.io/badge/Task-Multi--Modal-red) 
 ![Foundation-Model](https://img.shields.io/badge/Task-Foundation_Model-red) 
 ![Recommendation](https://img.shields.io/badge/Task-Recommendation-red) 
@@ -196,6 +196,16 @@ If our work has been of assistance to your work, please cite our paper as :
 |NineRec (A dataset suite covering 9 downstream recommendation tasks) | https://github.com/westlake-repl/NineRec   |
 
 # News
+
+\- **2024/04/18**: We have added the "description" column to the item information. 
+
+
+
+
+
+
+
+
 
 #### :bulb: If you have an innovative idea for building a foundation recommendation model but require a large dataset and computational resources, consider joining our lab as an intern or visiting scholar. We can provide access to 100 NVIDIA 80G A100 GPUs and a billion-level dataset of user-image/text interactions.
 
