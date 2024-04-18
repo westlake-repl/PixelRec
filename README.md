@@ -1,4 +1,4 @@
-# [SDM2024] PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels 
+# [SDM2024] [PixelRec: An Image Dataset for Benchmarking Recommender Systems with Raw Pixels ] (https://arxiv.org/pdf/2309.06789.pdf)
 
 <a href="https://arxiv.org/pdf/2309.06789.pdf" alt="paper"><img src="https://img.shields.io/badge/ArXiv-2309.06789-FAA41F.svg?style=flat" /></a>
 <a href="https://github.com/westlake-repl/PixelRec/blob/main/doc/pre.pdf" alt="slides"><img src="https://img.shields.io/badge/Slides-SDM2024-yellow" /></a>
