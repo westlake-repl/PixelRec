@@ -45,7 +45,7 @@ We provide an [integrated folder](https://drive.google.com/file/d/1fu0tqCmmXkte5
 
 
 
-> :warning: **Caution**: It's prohibited to privately modify the dataset and offer secondary downloads. If you've made alterations to the dataset in your work, you are encouraged to open-source the data processing code, so others can benefit from your methods. Or notify us of your new dataset so we can put it on this Github with your paper.
+> :warning: **Caution**: It's prohibited to privately modify the dataset and then offer secondary downloads. If you've made alterations to the dataset in your work, you are encouraged to open-source the data processing code, so others can benefit from your methods. Or notify us of your new dataset so we can put it on this Github with your paper.
 
 **Note that this is an image recommendation dataset, if you need video information, please go to our MicroLens github https://github.com/westlake-repl/MicroLens, a large-scale micro-video recommendation dataset collected from a different platform.**
 
