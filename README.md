@@ -200,6 +200,11 @@ If our work has been of assistance to your work, please cite our paper as :
 \- **2024/04/18**: We have added the "description" column to the item information. 
 
 
+**License**
+
+- The **code** in this repository is under the MIT License. Please look at the [LICENSE](LICENSE) file for details.
+- See the `dataset/LICENSE` file for **dataset** license details.
+
 
 
 
